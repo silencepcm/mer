@@ -19,7 +19,6 @@ public class EnemyScript : MonoBehaviour
     void Update()
     {
         Vector2 screenPoint = Camera.main.WorldToViewportPoint(transform.position);
-        print(rb2d.position.x);
         if (((screenPoint.y >= 1)&&(speed.y > 0)) || ((screenPoint.y <= 0) && (speed.y < 0)))
             speed.y *= -1;
     }
